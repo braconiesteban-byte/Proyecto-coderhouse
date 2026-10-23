@@ -3,78 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shorcut icon" href="./assets/logos/Emblema Mundo Camisetas Futboleras.png" type="image/x-icon">
     <title>Mundo camisetas</title>
 </head>
 <body>
     <header>
-        <h1>BIENVENIDO A MUNDO CAMISETAS</h1>
-        <h2>CONOCE LAS MEJORES CAMISETAS DEL MUNDO</h2>
+        <a href="#">
+            <img src="./assets/logos/logo tipografia.png" alt="Logo de Mundo Camisetas" class="logo">
+        </a>
+        <h1>LAS MEJORES CAMISETAS DEL MUNDO</h1>
         <p>Si sos amante del futbol y te encanta coleccionar camisetas, has llegado al lugar correcto. Descubre las camisetas de todo el mundo y de todas las épocas.</p>
-        <!-- Barra superior o principal: Páginas institucionales -->
+        
+        <!-- Navegación unificada -->
         <nav>
-            <ul>
+            <ul class="menu-principal">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="paginas/sobre mi.html">Sobre mi</a></li>
-                <li><a href="paginas/contactanos.html">Contacto</a></li>
-                <li><a href="paginas/faq.html">Preguntas frecuentes</a></li>
-                <li><a href="paginas/proyectos.html">Proyectos</a></li>
-            </ul>
-        </nav>
-        <!-- Barra de categorías de la tienda -->
-        <nav>
-            <h3>CATEGORIAS</h3>
-            <ul>
-                <li><a href="../paginas/internacionales.html">Internacionales</a></li>
-                <li><a href="../paginas/argentina.html">Argentina</a></li>
-                <li><a href="../paginas/selecciones.html">Selecciones</a></li>
-                <li><a href="../paginas/seleccion argentina.html">Selección Argentina</a></li>
+                <li><a href="pages/sobre mi.html">Sobre mi</a></li>
+                <li><a href="pages/contactanos.html">Contacto</a></li>
+                <li><a href="pages/faq.html">Preguntas frecuentes</a></li>
+                <li><a href="pages/proyectos.html">Proyectos</a></li>
+                
+                <!-- Categorías con su submenú -->
+                <li class="menu-categorias">
+                    <a href="#">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="pages/internacionales.html">Internacionales</a></li>
+                        <li><a href="pages/argentina.html">Argentina</a></li>
+                        <li><a href="pages/selecciones.html">Selecciones</a></li>
+                        <li><a href="pages/seleccion argentina.html">Selección Argentina</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-    <section>
-        <h2>Las camisetas más populares</h2>
-
+    <section class="catalogo-camisetas">
+        <article class="las-mas-buscadas">
+            <h2>Las camisetas más buscadas</h2>
+            <p>Explora nuestra amplia colección de camisetas de fútbol, desde clásicos retro hasta las últimas ediciones. Encuentra la camiseta perfecta para tu colección o para lucir con orgullo tu pasión por el fútbol.</p>
+        </article>
         <!-- Camiseta 1 -->
         <article>
         <figure>
-            <img src="../camisetas/argentina titular 2025 10 messi edicion especial.webp" alt="Camiseta Argentina 2025 10 Messi Edición Especial">
-            <figcaption>Camiseta Argentina 2025 10 Messi Edición Especial</figcaption>
+            <img src="./assets/camisetas/argentina titular 2025 10 messi edicion especial.webp" alt="Camiseta Argentina 2025 10 Messi Edición Especial" class="camisetas">
+            <figcaption class="descripcion-camisetas">Camiseta Argentina 2025 10 Messi Edición Especial</figcaption>
         </figure>
         </article>
 
         <!-- Camiseta 2 -->
         <article>
         <figure>
-            <img src="../camisetas/fiorentina 1998 retro.webp" alt="Camiseta Fiorentina 1998 Retro">
-            <figcaption>Camiseta Fiorentina 1998 Retro</figcaption>
+            <img src="./assets/camisetas/fiorentina 1998 retro.webp" alt="Camiseta Fiorentina 1998 Retro" class="camisetas">
+            <figcaption class="descripcion-camisetas">Camiseta Fiorentina 1998 Retro</figcaption>
         </figure>
         </article>
 
         <!-- Camiseta 3 -->
         <article>
         <figure>
-            <img src="../camisetas/maradona 94 suplente.webp" alt="Camiseta Maradona 1994 Suplente">
-            <figcaption>Camiseta Maradona 1994 Suplente</figcaption>
+            <img src="./assets/camisetas/maradona 94 suplente.webp" alt="Camiseta Maradona 1994 Suplente" class="camisetas">
+            <figcaption class="descripcion-camisetas">Camiseta Maradona 1994 Suplente</figcaption>
         </figure>
         </article>
 
         <!-- Camiseta 4 -->
         <article>
         <figure>
-            <img src="../camisetas/messi 26 HeatRDY.webp" alt="Camiseta Messi 26 HeatRDY">
-            <figcaption>Camiseta Messi 26 HeatRDY</figcaption>
+            <img src="./assets/camisetas/messi 26 HeatRDY.webp" alt="Camiseta Messi 26 HeatRDY" class="camisetas">
+            <figcaption class="descripcion-camisetas">Camiseta Messi 26 HeatRDY</figcaption>
         </figure>
         </article>
     </section>
     </main>
 
     <footer>
-        <h5>ENCONTRANOS</h5>
-         <ul>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+        <h4>ENCONTRANOS</h4>
+         <ul class="rrss-list">
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/logos/instagram.png" alt="Logo de Instagram" class="rrss">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./assets/logos/facebook.png" alt="Logo de Facebook" class="rrss">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="./assets/logos/x.png" alt="Logo de Twitter" class="rrss">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="./assets/logos/yt.png" alt="Logo de YouTube" class="rrss">
+                </a>
+            </li>
         </ul>
         <p>&copy; 2023 Mundo Camisetas. Todos los derechos reservados.</p>
     </footer>

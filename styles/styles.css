@@ -1,0 +1,299 @@
+
+
+/* Algunas de las cosas utilizadas en el codigo fueron realizadas con ayuda de Teacher y para mayor aprendizaje fui colocando que funcion cumple las cosas que iba haciendo, 
+para poder entender mejor el codigo y poder realizarlo de manera mas facil. Ademas de asi saber donde tocar si quiero realizar algun cambio */
+
+
+
+/* Tipografía */
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+
+/* Tamaños del fondo */
+
+main{
+    min-height: (100vh - 160px); /* Asegura que el main ocupe al menos toda la altura de la ventana */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño total */
+}
+
+
+
+/* Color de fondos */
+body{
+    background-color: #ffffff;
+}
+
+header {
+  background: #3b48ff;
+  color: white;
+  padding: 3rem;
+}
+
+section {
+  background-color: #ffffff;  /* 1. Color de fondo */
+  margin: 1rem; /* 2. Espaciado exterior */
+  padding: 10rem; /* 3. Espaciado interior */
+}
+
+footer {
+  background-color: #3b48ff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* Tamaño de imagenes */
+
+.logo {
+    display: block;   /* Permite que responda al margin auto */
+    margin: 0 auto;   /* Centra la imagen horizontalmente */
+    height: 150px;
+    width: auto;      /* Mantiene la proporción de la imagen */
+}
+
+
+.rrss {
+    height: 50px;
+    width: auto;
+}
+
+.camisetas {
+    height: 800px;             /* Tamaño más adecuado para una grilla/fila */
+    width: auto;               /* Mantiene la proporción de la foto */
+    display: block;
+    margin: 0 auto;
+}
+
+.catalogo-camisetas {
+    display: flex;             /* Coloca las tarjetas una al lado de la otra */
+    justify-content: center;   /* Centra la fila en la pantalla */
+    flex-wrap: wrap;           /* Permite que bajen a la siguiente línea si no entran */
+    gap: 20px;                 /* Espacio entre cada tarjeta */
+}
+
+
+
+
+/* Tipografías */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    text-align: justify;
+    margin: 1rem;
+    text-align: center;
+}
+
+a {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    text-align: center;
+}
+
+main {
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.descripcion-camisetas {
+    font-family: 'Domine', serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.las-mas-buscadas {
+    font-family: 'Domine', serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* LISTAS Y ENLACES*/
+
+/* Lista principal horizontal */
+.menu-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Enlaces base */
+.menu-principal a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Posicionamiento para el submenú */
+.menu-categorias {
+    position: relative; /* Clave para ubicar el desplegable */
+}
+
+/* Submenú de categorías (oculto por defecto) */
+.submenu{
+    display: none;          /* 1. Oculta el menú por defecto para que no se vea hasta que el usuario pase el cursor */
+    position: absolute;     /* 2. Lo saca del flujo normal del documento y lo posiciona respecto a su padre (.menu-categorias) */
+    top: 100%;              /* 3. Lo ubica exactamente debajo del elemento padre (al 100% de la altura de "Categorías") */
+    left: 0;                /* 4. Alinea el borde izquierdo del submenú con el borde izquierdo del botón "Categorías" */
+    list-style: none;    /* 5. Quita los puntos/viñetas por defecto de la lista <ul> */
+    padding: 20px;    /* 6. Agrega espacio interno (aire) alrededor de los elementos del submenú */
+    margin: 0;    /* 7. Elimina los márgenes exteriores por defecto que trae la etiqueta <ul> */
+    background-color: #070707;     /* 8. Fondo blanco para que los textos sean legibles y no se trasluzca lo que esté atrás */
+    box-shadow: 0 4px 8px #6372ff;     /* 9. Aplica una sombra suave alrededor del cuadro para darle efecto de profundidad/flotación */
+    min-width: 180px;     /* 10. Define un ancho mínimo para que las opciones no se compriman si el texto es corto */
+    border-radius: 4px;     /* 11. Redondea levemente las cuatro esquinas de la tarjeta desplegable */
+    z-index: 10;     /* 12. Controla la capa de superposición para que el menú flote por encima de otros elementos (como imágenes o títulos) */
+}
+
+.submenu li a:hover{
+    color: #346eec;
+    margin: 8px 0;
+}
+
+/* Muestra las categorías al pasar el mouse por encima */
+.menu-categorias:hover .submenu {
+    display: block;
+}
+
+.rrss-list {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex;    /* Muestra los elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 30px;        /* Espacio entre cada elemento de la lista */
+}
+
+/* Textos */
+
+/* Margen para el título principal */
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Margen para "CATEGORIAS" */
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Margen para h3 */
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Margen para los párrafos */
+p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 1.6; /* Opcional: aumenta la separación entre las líneas de un mismo texto */
+}
+
+footer {
+    text-align: center; /* Centra el texto dentro del footer */
+    color: #ffffff;       /* Color del texto */
+}
+
+
+/* DISEÑO DE LA PAGINA "SOBRE MI" */
+
+/* diseño de la biografía */
+
+/* El rectángulo contenedor */
+.tarjeta-perfil {
+    background-color: #ffffff;
+    max-width: 800px;             /* Ancho máximo para que no se estire de más */
+    margin: 40px auto;            /* Centra la tarjeta horizontalmente */
+    padding: 30px;                /* Espacio interno entre el borde y el contenido */
+    border-radius: 12px;          /* Esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para darle relieve */
+    
+    /* Distribución con Flexbox */
+    display: flex;
+    align-items: center;          /* Centra la foto y el texto verticalmente */
+    gap: 30px;                    /* Separación entre la imagen y el texto */
+}
+
+/* La imagen de perfil */
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;            /* Evita que la foto se deforme */
+    border-radius: 50%;           /* La hace circular (si preferís cuadrada con esquinas suaves, cambiá a 8px) */
+    flex-shrink: 0;               /* Evita que la imagen se achique si el texto es largo */
+}
+
+/* El texto de la biografía */
+.bio-perfil h2 {
+    font-family: 'Domine', sans-serif;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #222222;
+}
+
+.bio-perfil p {
+    font-family: 'Domine', sans-serif;
+    color: #000000;
+    line-height: 1.6;             /* Altura de línea para mejorar la lectura */
+    margin-bottom: 10px;
+}
+
+.logo-sobre-mi {
+    display: block;               /* Permite que responda al margin auto */
+    margin: 20px auto;            /* Centra la imagen horizontalmente y agrega espacio arriba y abajo */
+    height: 150px;
+    width: auto;                  /* Mantiene la proporción de la imagen */
+}
+
+.logo-sobre-mi-texto {
+    font-family: 'Domine', sans-serif; /* Fuente consistente con el resto del sitio */
+    text-align: center;           /* Centra el texto debajo del logo */
+    font-size: 16px;              /* Tamaño de fuente adecuado */
+    color: #333333;               /* Color del texto */
+    margin-top: 8px;              /* Espacio entre el logo y el texto */
+}
+
+/* DISEÑO DE LA PAGINA "CONTACTANOS" */
+
+.contacto-formulario {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000001a;
+}
+
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-formulario input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Domine', sans-serif;
+}
+
+.contacto-formulario input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto-formulario input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
