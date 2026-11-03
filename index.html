@@ -12,19 +12,11 @@
         <a href="#">
             <img src="./assets/logos/logo tipografia.png" alt="Logo de Mundo Camisetas" class="logo">
         </a>
-        <h1>LAS MEJORES CAMISETAS DEL MUNDO</h1>
-        <p>Si sos amante del futbol y te encanta coleccionar camisetas, has llegado al lugar correcto. Descubre las camisetas de todo el mundo y de todas las épocas.</p>
         
         <!-- Navegación unificada -->
-        <nav>
+        <nav class="navbar">
             <ul class="menu-principal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/sobre mi.html">Sobre mi</a></li>
-                <li><a href="pages/contactanos.html">Contacto</a></li>
-                <li><a href="pages/faq.html">Preguntas frecuentes</a></li>
-                <li><a href="pages/proyectos.html">Proyectos</a></li>
-                
-                <!-- Categorías con su submenú -->
+                    <!-- Categorías con su submenú -->
                 <li class="menu-categorias">
                     <a href="#">Categorías</a>
                     <ul class="submenu">
@@ -34,51 +26,92 @@
                         <li><a href="pages/seleccion argentina.html">Selección Argentina</a></li>
                     </ul>
                 </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/sobre-mi.html">Sobre mi</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/faq.html">Preguntas frecuentes</a></li>
+                <li><a href="pages/proyectos.html">Proyectos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <section class="catalogo-camisetas">
-        <article class="las-mas-buscadas">
+    <section class="presentacion-camisetas">
+        <article>
             <h2>Las camisetas más buscadas</h2>
             <p>Explora nuestra amplia colección de camisetas de fútbol, desde clásicos retro hasta las últimas ediciones. Encuentra la camiseta perfecta para tu colección o para lucir con orgullo tu pasión por el fútbol.</p>
         </article>
+    </section>
+    <section class="catalogo-camisetas">
         <!-- Camiseta 1 -->
-        <article>
-        <figure>
-            <img src="./assets/camisetas/argentina titular 2025 10 messi edicion especial.webp" alt="Camiseta Argentina 2025 10 Messi Edición Especial" class="camisetas">
-            <figcaption class="descripcion-camisetas">Camiseta Argentina 2025 10 Messi Edición Especial</figcaption>
-        </figure>
+        <article class="tarjeta-camiseta">
+            <figure class="camiseta">
+                <img src="./assets/camisetas/argentina titular 2025 10 messi edicion especial.webp" alt="Camiseta Argentina 2025 10 Messi Edición Especial" class="camisetas">
+            </figure>
+            <div class="info-camiseta">
+                <p class="descripcion-camisetas">Camiseta Argentina 2025 10 Messi Edición Especial</p>
+                <a href="./pages/contacto.html" class="btn-comprar">Comprar</a>
+            </div>
         </article>
 
         <!-- Camiseta 2 -->
-        <article>
-        <figure>
-            <img src="./assets/camisetas/fiorentina 1998 retro.webp" alt="Camiseta Fiorentina 1998 Retro" class="camisetas">
-            <figcaption class="descripcion-camisetas">Camiseta Fiorentina 1998 Retro</figcaption>
-        </figure>
+        <article class="tarjeta-camiseta">
+            <figure class="camiseta">
+                <img src="./assets/camisetas/fiorentina 1998 retro.webp" alt="Camiseta Fiorentina 1998 Retro" class="camisetas">
+            </figure>
+            <div class="info-camiseta">
+                <p class="descripcion-camisetas">Camiseta Fiorentina 1998 Retro</p>
+                <a href="./pages/contacto.html" class="btn-comprar">Comprar</a>
+            </div>
         </article>
 
         <!-- Camiseta 3 -->
-        <article>
-        <figure>
-            <img src="./assets/camisetas/maradona 94 suplente.webp" alt="Camiseta Maradona 1994 Suplente" class="camisetas">
-            <figcaption class="descripcion-camisetas">Camiseta Maradona 1994 Suplente</figcaption>
-        </figure>
+        <article class="tarjeta-camiseta">
+            <figure class="camiseta">
+                <img src="./assets/camisetas/maradona 94 suplente.webp" alt="Camiseta Maradona 1994 Suplente" class="camisetas">
+            </figure>
+            <div class="info-camiseta">
+                <p class="descripcion-camisetas">Camiseta Maradona 1994 Suplente</p>
+                <a href="./pages/contacto.html" class="btn-comprar">Comprar</a>
+            </div>
         </article>
 
         <!-- Camiseta 4 -->
-        <article>
-        <figure>
-            <img src="./assets/camisetas/messi 26 HeatRDY.webp" alt="Camiseta Messi 26 HeatRDY" class="camisetas">
-            <figcaption class="descripcion-camisetas">Camiseta Messi 26 HeatRDY</figcaption>
-        </figure>
+        <article class="tarjeta-camiseta">
+            <figure class="camiseta">
+                <img src="./assets/camisetas/messi 26 HeatRDY.webp" alt="Camiseta Messi 26 HeatRDY" class="camisetas">
+            </figure>
+            <div class="info-camiseta">
+                <p class="descripcion-camisetas">Camiseta Messi 26 HeatRDY</p>
+                <a href="./pages/contacto.html" class="btn-comprar">Comprar</a>
+            </div>
+        </article>
+
+        <!--Camiseta 5-->
+        <article class="tarjeta-camiseta">
+            <figure class="camiseta">
+                <img src="./assets/camisetas/KAKÁ 2006 DORSO.webp" class="camisetas">
+            </figure>
+            <div class="info-camiseta">
+                <p class="descripcion-camisetas">Camiseta KAKÁ 2006</p>
+                <a href="./pages/contacto.html" class="btn-comprar">Comprar</a>
+            </div>
+        </article>
+
+        <!--Camiseta 6-->
+        <article class="tarjeta-camiseta">
+            <figure class="camiseta">
+                <img src="./assets/camisetas/RONALDO 2008 DORSO.webp" class="camisetas">
+            </figure>
+            <div class="info-camiseta">
+                <p class="descripcion-camisetas">Camiseta Ronaldo United 2008</p>
+                <a href="./pages/contacto.html" class="btn-comprar">Comprar</a>
+            </div>
         </article>
     </section>
     </main>
 
     <footer>
-        <h4>ENCONTRANOS</h4>
+        <h4 class="encontranos">ENCONTRANOS</h4>
          <ul class="rrss-list">
             <li>
                 <a href="https://www.instagram.com/" target="_blank">
